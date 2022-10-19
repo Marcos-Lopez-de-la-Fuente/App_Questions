@@ -3,8 +3,10 @@ package com.example.appquestions;
 import androidx.appcompat.app.AppCompatActivity;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.TextView;
@@ -143,6 +145,11 @@ public class MainActivity extends AppCompatActivity {
         this.checkResponse();
 
         this.changesForAnswer();
+
+
+        if (this.allQuestionsAnswered()) {
+            this.goToEndQuestionsActivity();
+        }
     }
 
 
@@ -174,4 +181,40 @@ public class MainActivity extends AppCompatActivity {
         savedInstanceState.putStringArrayList("questionsBankResponses", questionsBankResponses);
 
     }
+
+
+    public Boolean allQuestionsAnswered() {
+        Boolean response = true;
+
+        for (Questions question : this.questionsBank) {
+            if (question.getResponse() == null) {
+                response = false;
+            }
+        }
+
+        return response;
+
+    }
+
+    public void goToEndQuestionsActivity() {
+        Intent intent = new Intent(this, EndQuestionsActivity.class);
+        intent.putExtra("counterCorrects", this.counterCorrects.getText());
+        intent.putExtra("counterIncorrects", this.counterIncorrects.getText());
+        intent.putExtra("percentageCorrectAnswers", this.checkPercentageCorrectAnswers());
+        this.startActivity(intent);
+    }
+
+
+    public float checkPercentageCorrectAnswers() {
+        float percentage = 0;
+        for (Questions question : this.questionsBank) {
+            if (question.getResponse() == question.getAnswer()) {
+                percentage++;
+            }
+        }
+        percentage = (percentage / this.questionsBank.size()) * 100;
+
+        return percentage;
+    }
+
 }

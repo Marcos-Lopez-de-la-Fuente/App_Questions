@@ -1,10 +1,10 @@
 # App Questions
 
-En este repositorio mostraré como crear una App sencilla de preguntas.
+In this repository I will show how to create a simple quiz app.
 
 <details>
 
-**<summary>Imágenes de la aplicación</summary>**
+**<summary>Application Images</summary>**
 
 ![Image1](imagesForReadme/1.png)
 ![Image2](imagesForReadme/2.png)
@@ -18,51 +18,51 @@ En este repositorio mostraré como crear una App sencilla de preguntas.
 </details>
 
 
-## Funcionamiento general (De cara al usuario)
+## Functioning general (User view)
 
-- El icono de la aplicación será diferente al predeterminado de Android Studio
+- The app icon will be different from the Android Studio default.
 
-- Cuando entres a la aplicación empezará una ronda de preguntas que podrás responder con "True" o "False"-.
+- Upon entering the application, a round of questions will begin that you can answer with `True` or `False`.
 
-- También tendrá un contador de respuestas correctas y respuestas incorrectas.
+- The app will display a counter of correct and incorrect answers.
 
-- Podrás desplazarte entre las preguntas mediante unas flechas hacia adelante o hacia atrás.
+- You can move between questions using the forward or back arrows.
 
-- Si respondes una pregunta, no podrás editar tu respuesta.
+- If you answer a question, you will not be able to edit your answer.
 
-- Cuando respondas todas las preguntas se creará otra Actividad con el resultado de preguntas correctas obtenidas.
+- When you answer all the questions, another Activity will be created with the result of the correct questions obtained.
 
-- Tras ver tus resultados podrás volver a empezar el programa pulsando un botón.
+- After seeing your results, you can start the program again by pressing a button.
 
-- Si volteas el móvil en cualquier momento los datos seguirán guardados en la aplicación y podrás seguir sin ningún problema.
+- If you turn the mobile over at any time, the data will still be saved in the application and you will be able to continue without any problem.
 
-## Funcionamiento técnico
+## Functioning technical
 
-El programa se separará en las siguientes secciones:
+The program will be divided into the following sections:
 
-- ### **Archivos Java** (Destinados al Backend en la aplicación):
+- ### **Java files** (Application Backend):
 
-    - **Actividades**
+    - **Activities**
 
-        - `MainActivity.java`: Actividad principal del programa, en esta el usuario podrá ver las preguntas, responderlas, desplazarse entre las preguntas, ver el contador de preguntas correctas y preguntas incorrectas.
+        - `MainActivity.java`: Main activity of the program, in this the user will be able to see the questions, answer them, move between the questions, see the counter of correct questions and incorrect questions.
 
-        - `EndQuestionsActivity.java`: Cuando el usuario responda todas las preguntas del programa, se llamará automáticamente a esta Actividad. Se mostrará por pantalla el número de preguntas correctas, preguntas incorrectas, porcentaje de preguntas correctas y un botón para volver a empezar el programa desde 0.
+        - `EndQuestionsActivity.java`: When the user answers all the questions in the program, this Activity will be called automatically. The screen will display the number of correct questions, incorrect questions, percentage of correct questions and a button to restart the program from 0.
 
-    - **Clases Java**
+    - **Java Classes**
 
-        - `Questions.java`: En ella se guardarán las preguntas del programa con su respuesta correcta y las respuestas del usuario.
+        - `Questions.java`: The program's questions with their correct answer and the user's answers will be saved in it.
 
-- ### **Archivos XML** (Destinados al Frontend de la aplicación):
+- ### **XML files** (Application Frontend):
 
-    - **`activity_main.xml`** (Vertical y horizontal)
+    - **`activity_main.xml`** (Vertical and horizontal)
 
-        - Utilizando etiquetas `<LinearLayout>` se mostrará al usuario la frase actual, 2 botones para responder `True` o `False`, 2 botones para saltar a la siguiente frase o a la anterior frase. También se mostrará un contador de preguntas correctas y preguntas incorrectas.
+        - Using `<LinearLayout>` tags will show the user the current sentence, 2 buttons to answer `True` or `False`, 2 buttons to jump to the next or previous sentence. A counter of correct questions and incorrect questions will also be displayed.
 
-    - **`activity_end_questions.xml`** (Vertical y horizontal)
+    - **`activity_end_questions.xml`** (Vertical and horizontal)
 
-        - Utilizando etiquetas `<LinearLayout>` se mostrará al usuario un contador de preguntas correctas y preguntas incorrectas, un porcentaje de preguntas acertadas y un botón para volver a empezar el programa.
+        - Using `<LinearLayout>` tags will show the user a counter of correct and incorrect questions, a percentage of correct questions, and a button to start the program again.
 
-## **Código**
+## **Code**
 
 <details>
 

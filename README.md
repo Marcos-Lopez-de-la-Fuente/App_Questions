@@ -6,14 +6,7 @@ In this repository I will show how to create a simple quiz app.
 
 **<summary>Application Images</summary>**
 
-![Image1](imagesForReadme/1.png)
-![Image2](imagesForReadme/2.png)
-![Image3](imagesForReadme/3.png)
-![Image4](imagesForReadme/4.png)
-![Image5](imagesForReadme/5.png)
-![Image6](imagesForReadme/6.png)
-![Image7](imagesForReadme/7.png)
-![Image8](imagesForReadme/8.png)
+<img src="imagesForReadme/gifApp.gif">
 
 </details>
 

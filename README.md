@@ -6,21 +6,19 @@ En este repositorio mostraré como crear una App sencilla de preguntas.
 
 **<summary>Imágenes de la aplicación</summary>**
 
-![Image1](imagesForReadme/1.PNG)
-![Image2](imagesForReadme/2.PNG)
-![Image3](imagesForReadme/3.PNG)
-![Image4](imagesForReadme/4.PNG)
-![Image5](imagesForReadme/5.PNG)
-![Image6](imagesForReadme/6.PNG)
-![Image7](imagesForReadme/7.PNG)
-![Image8](imagesForReadme/8.PNG)
+![Image1](imagesForReadme/1.png)
+![Image2](imagesForReadme/2.png)
+![Image3](imagesForReadme/3.png)
+![Image4](imagesForReadme/4.png)
+![Image5](imagesForReadme/5.png)
+![Image6](imagesForReadme/6.png)
+![Image7](imagesForReadme/7.png)
+![Image8](imagesForReadme/8.png)
 
 </details>
 
 
 ## Funcionamiento general (De cara al usuario)
-
----
 
 - El icono de la aplicación será diferente al predeterminado de Android Studio
 
